@@ -1,6 +1,6 @@
 package Calculate;
 
-import java.util.Random;
+import java.util.*;
 
 public class calculate {
 	public static int[][] scanf(int[][] n) {	//生成随机数进行判定赋值。
