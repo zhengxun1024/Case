@@ -34,7 +34,7 @@ public class calculate {
 		return n;		//返回带有计算结果二维数组
 	}
 
-	public static int[][] print(int[][] n) {	//输出题目并计算结果
+	public static void print(int[][] n) {	//输出题目并计算结果
 		int i;
 		char c;
 		System.out.println("-----程序输出50道100以内的加减法运算的口算题-----");
@@ -49,7 +49,6 @@ public class calculate {
 				System.out.print("\n");
 			}
 		}
-		return n;		//返回的二维数组。
 
 	}
 
@@ -66,7 +65,7 @@ public class calculate {
 	public static void main(String[] args) {	//主函数 
 		int[][] m = new int[4][50];		//定义二维数组,包含数1,加减号,数2,计算结果四个一维数组。
 		m = scanf(m);		//调用scanf函数进行随机数赋值，返回二维数组。
-		m = print(m);		//调用print函数生成题目，返回带有计算结果的二位数组。
+		print(m);		//调用print函数生成题目，返回带有计算结果的二位数组。
 		calculations(m[3]);	//调用calculations函数输出答案。
 	}
 }
