@@ -65,7 +65,7 @@ public class calculate {
 	public static void main(String[] args) {	//主函数 
 		int[][] m = new int[4][50];		//定义二维数组,包含数1,加减号,数2,计算结果四个一维数组。
 		m = scanf(m);		//调用scanf函数进行随机数赋值，返回二维数组。
-		print(m);		//调用print函数生成题目，返回带有计算结果的二位数组。
+		print(m);		//调用print函数生成题目
 		calculations(m[3]);	//调用calculations函数输出答案。
 	}
 }
