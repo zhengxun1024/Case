@@ -20,6 +20,5 @@ public class BinaryOperationTester {
 			bin = bo.generateBinaryOperation();
 			System.out.println(bin.asString());
 		}
-		
 	}
 }

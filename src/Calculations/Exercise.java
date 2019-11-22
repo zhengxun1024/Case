@@ -55,7 +55,7 @@ public class Exercise {
 
 	void formateAndDisplay() {
 		for (int i = 0; i < QUESTION_NUMBER; i++) {
-			System.out.print((i+1)+"、 "+operationList[i].asString()+"\t");
+			System.out.print((i + 1) + "、 " + operationList[i].asString() + "\t");
 			if ((i + 1) % 5 == 0) { // 每输出5道算式则换行
 				System.out.print("\n");
 			}

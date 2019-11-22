@@ -48,23 +48,13 @@ public class BinaryOperation {
 
 	public BinaryOperation generateBinaryOperation() {
 		Random random = new Random();
-		int left = 0, right = 0, op = 0;
-		int result = 0;
-		while (result <= UPPER && result >= LOWER) {
-			left = random.nextInt(UPPER + 1);
-			op = random.nextInt(2);
-			right = random.nextInt(UPPER + 1);
-			if (op == 1) {
-				result = left + right;
-			} else {
-				result = left - right;
-			}
-		}
-		BinaryOperation bop = new BinaryOperation();
+		BinaryOperation bop, rebop = new BinaryOperation();
+		int op;
+		op = random.nextInt(2);
 		if (op == 1) {
-			bop.construct(left, right, '+');
+			bop = rebop.generateAdditionOperation();
 		} else {
-			bop.construct(left, right, '-');
+			bop = rebop.generateSubstractOperation();
 		}
 		return bop;
 	}
@@ -84,14 +74,14 @@ public class BinaryOperation {
 	public int getResult() {
 		return value;
 	}
-	
-	public boolean equals (BinaryOperation anOperation) {
-		return left_operand == anOperation.getLeftOperand() &
-				right_operand == anOperation.getRightOperand() &
-				operator == anOperation.getOperator();
+
+	public boolean equals(BinaryOperation anOperation) {
+		return left_operand == anOperation.getLeftOperand() & right_operand == anOperation.getRightOperand()
+				& operator == anOperation.getOperator();
 	}
+
 	public String asString() {
-		String string = String.valueOf(left_operand) +""+ operator +""+ String.valueOf(right_operand) +" = ";
+		String string = String.valueOf(left_operand) + "" + operator + "" + String.valueOf(right_operand) + " = ";
 		return string;
-	}	
+	}
 }

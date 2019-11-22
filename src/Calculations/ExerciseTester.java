@@ -7,5 +7,4 @@ public class ExerciseTester {
 		exer.generatesubstractExercise();
 		exer.generateBinaryExercise();
 	}
-	
 }
