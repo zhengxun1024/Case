@@ -21,5 +21,6 @@ public class ExerciseSheet { // 习题集系统类，用于设置数值和生成相应的题目
 		ex.formateAndDisplay(5);
 		System.out.println("----------------50道加减法题答案如下----------------");
 		ex.conclutions(ex, 5);
+		//通融通融
 	}
 }
