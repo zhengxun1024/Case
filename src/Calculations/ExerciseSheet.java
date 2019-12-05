@@ -7,13 +7,19 @@ public class ExerciseSheet { // 习题集系统类，用于设置数值和生成相应的题目
 		System.out.println("----------------50道加法运算题如下----------------");
 		ex.generateAdditionExercise(50);
 		ex.formateAndDisplay(5);
+		System.out.println("----------------50道加法题答案如下----------------");
+		ex.conclutions(ex, 5);
 		// 按格式输出50道减法题目，题数可设置。
 		System.out.println("----------------50道减法运算题如下----------------");
 		ex.generateSubstractExercise(50);
 		ex.formateAndDisplay(5);
+		System.out.println("----------------50道减法题答案如下----------------");
+		ex.conclutions(ex, 5);
 		// 按格式输出50道加减法题目，题数可设置。
 		System.out.println("----------------50道加减法运算题如下----------------");
 		ex.generateBinaryExercise(50);
 		ex.formateAndDisplay(5);
+		System.out.println("----------------50道加减法题答案如下----------------");
+		ex.conclutions(ex, 5);
 	}
 }

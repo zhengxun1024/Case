@@ -7,6 +7,23 @@ public abstract class BinaryOperation { // 算式类，用于生成一条加法或减法的类
 	static int LOWER = 0;
 	private int left_operand = 0, right_operand = 0;
 	private char operator = '+';
+	private int value;
+
+	public int getValue() {
+		return value;
+	}
+
+	public int getLeft() {
+		return left_operand;
+	}
+
+	public int getRight() {
+		return right_operand;
+	}
+
+	public char getOperator() {
+		return operator;
+	}
 
 	// 生成一组随机数并使用抽象函数进行判定。
 	protected int generateBinaryOperation(char anOperator) {
@@ -20,6 +37,7 @@ public abstract class BinaryOperation { // 算式类，用于生成一条加法或减法的类
 		left_operand = left;
 		right_operand = right;
 		operator = anOperator;
+		value = result;
 		return result;
 	}
 

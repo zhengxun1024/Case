@@ -63,4 +63,16 @@ public class Exercise { // 习题类，用于调用算式类进行题目的生成。
 			}
 		}
 	}
+
+	void conclutions(Exercise ex, int columns) {
+		BinaryOperation value;
+		int size = operationList.size(); // 利用size函数得到列表长度。
+		for (int i = 0; i < size; i++) { // 循环获得列表中的对象并调用asString函数输出字符串。
+			value = operationList.get(i); // 使用列表函数get 获得BinaryOperation对象
+			System.out.print((i + 1) + "、 " + value.getValue() + "\t" + "\t");
+			if ((i + 1) % columns == 0) { // 根据参数设定输出格式
+				System.out.print("\n");
+			}
+		}
+	}
 }
